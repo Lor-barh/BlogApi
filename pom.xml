@@ -51,13 +51,14 @@
 				<configuration>
 					<excludes>
 						<exclude>
-							<groupId>org.projectlombok</groupId>
+							<groupId>org.projectors</groupId>
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>blog-docker</finalName>
 	</build>
 
 </project>
