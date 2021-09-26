@@ -4,9 +4,7 @@ services:
     image: 'blog'
     ports:
       - "8080:8080"
-    depends_on:
-      PostgreSQL:
-        condition: service_healthy
+
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://PostgreSQL:5432/blog_db
       - SPRING_DATASOURCE_USERNAME=postgres

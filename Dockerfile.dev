@@ -1,0 +1,4 @@
+FROM openjdk:11
+EXPOSE 8080
+ADD target/blog-docker.jar blog-docker.jar
+ENTRYPOINT ["java","-jar", "blog-docker.jar"]
